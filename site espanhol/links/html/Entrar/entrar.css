@@ -1,0 +1,256 @@
+:root {
+    --primary-color:   #ff6600;
+    --secondary-color: #a439db;
+    --terciary-color: #7b8650;
+    --text-color: #333333;
+    --background-light: #F5F5F5;
+    --spacing-unit: 1rem;
+    --container-width: 1200px;
+}
+ body{
+  background: #f4f4f4;
+ }
+        /* Inputs */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 5px rgba(164, 57, 219, 0.3);
+        }
+
+        /* Forgot password */
+        .forgot-password {
+            text-align: right;
+            margin: 10px 0 20px 0;
+        }
+
+        .forgot-password a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        /* Remember me section */
+        .remember-section {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .remember-section input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            transform: scale(1.2);
+            accent-color: var(--secondary-color);
+        }
+
+        .remember-section label {
+            margin: 0;
+            font-weight: normal;
+            font-size: 14px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        /* Login button */
+        .login-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 14px 20px;
+            margin: 15px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(164, 57, 219, 0.3);
+        }
+
+        /* Register section */
+        .register-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .register-section p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+            font-size: 14px;
+        }
+
+        .register-btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .register-btn:hover {
+            background: transparent;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 102, 0, 0.3);
+        }
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+/* 🌸 ======== TELA METADE FORM / METADE IMAGEM ======== 🌸 */
+.login-section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #F5F5F5;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  box-shadow: inset -5px 0 10px rgba(255, 182, 193, 0.2);
+  
+}
+
+.login-form {
+  width: 80%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #fffafc;
+  box-shadow: 0 4px 20px #a439db;
+  animation: fadeIn 1s ease;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #ff6600;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Inputs e botões seguem seu estilo existente */
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #2b2525;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #a439db;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.4);
+  outline: none;
+}
+
+.login-btn {
+  background: linear-gradient(90deg,#ffcce0,#a439db);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 8px;
+  color: rgb(10, 10, 10);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  display: inline-block;
+          
+}
+
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+}
+
+/* 🌷 lado da imagem */
+.image-side {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffd6e0, #fff0f6);
+}
+
+.image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeIn 1.5s ease;
+}
+
+/* 🌼 Animação suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsivo para celular */
+@media (max-width: 900px) {
+  .login-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-side {
+    height: 300px;
+  }
+
+  .image-side img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

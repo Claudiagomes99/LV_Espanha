@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="../Home/css/style2.css">
+    <link rel="stylesheet" href="../Cadastro/cadastro2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+        <nav class="nav local">
+             <a href="../Home/sitecomcss.html" class="nav-logo">LV_Espanã</a>
+            <ul class="nav-menu">
+                <li><a href="../Home/sitecomcss.html" class="nav-link">Home</a></li>
+               <li><a href="../Sobre-nos/sobrenos.html"class="nav-link">Sobre Nós</a></li>
+                <li><a href="../Cursos/cursos.html"class="nav-link">Cursos</a></li>
+                <li><a href="../Contato/contato2.html"class="nav-link">Contato</a></li>
+                <li><a href="../Perfil/perfil.html" class="nav-link">Perfil</a></li>
+                <li><a href="../Blogs/blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="../Entrar/Entrar.html" class="nav-link">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+ <section class="login-section">
+  <div class="form-side">
+    <form action="action_page.php" method="post" class="login-form">
+      <h2>Login do Usuário </h2>
+
+      <div class="form-group">
+        <label for="uname"><b>Nome completo</b></label>
+        <input type="text" placeholder="Digite aqui" name="uname" id="uname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="uname"><b>Telefone</b></label>
+        <input type="text" placeholder="Digite aqui" name="uname" id="uname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Digite aqui" name="uname" id="uname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="psw"><b>Data de nascimento</b></label>
+        <input type="date" placeholder="Digite aqui" name="psw" id="psw" required max="2025-11-03">
+      </div>
+
+      <div class="form-group">
+        <label for="uname"><b>Senha</b></label>
+        <input type="password" placeholder="Digite aqui" name="uname" id="uname" required>
+      </div>
+
+       <div class="form-group">
+        <label for="uname"><b>Confirmar senha</b></label>
+        <input type="password" placeholder="Digite aqui" name="uname" id="uname" required>
+      </div>
+
+
+      <div class="remember-section">
+        <input type="checkbox" id="remember" name="remember" checked="checked">
+        <label for="remember">Lembrar de mim</label>
+      </div>
+
+      <a href="../Perfil/perfil.html" type="submit" class="login-btn">Cadastrar</a>
+
+      
+    </form>
+  </div>
+
+  <div class="image-side">
+    <img src="../Home/Pr.webp" alt="Login imagem fofa">
+  </div>
+</section>
+    <script src="../Cadastro/cadastro.js"></script>
+
+
+
+
+
+
+
+  <footer class="footer" aria-labelledby="rodape-title">
+    <div class="footer__container">
+      <div class="brand">
+        <div class="brand__name" aria-label="LVE_Espanha">
+          <span>LVE_Espanha</span>
+        </div>
+        <p class="brand__text">Ensino e Curiosidades que procura.</p>
+      </div>
+
+      <div class="contact" aria-labelledby="contact-title">
+        <h3 id="contact-title" class="contact__title">Contato</h3>
+        <div class="contact__row">
+          <div class="contact__item">
+            <div class="contact__icon" aria-hidden="true">📞</div>
+            <div>
+              <div class="contact__label">Telefone:</div>
+              <div class="contact__value"><a href="tel:+550000000000">+55 (11)93356-7586</a></div>
+            </div>
+          </div>
+
+          <div class="contact__item">
+            <div class="contact__icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="contact__label">E‑mail:</div>
+              <div class="contact__value"><a href="mailto:contato@seusite.com">greencode.oficial@gmail.com </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="social" aria-labelledby="social-title">
+        <h3 id="social-title" class="social__title">Redes sociais</h3>
+        <div class="social__list">
+          <a class="social__link" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a class="social__link" href="#" target="_blank" rel="noopener">Facebook</a>
+          <a class="social__link" href="#" target="_blank" rel="noopener">YouTube</a>
+          <a class="social__link" href="#" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <div id="copyright">© <span id="year"></span> SeuSite. Todos os direitos reservados.</div>
+      <div class="footer__links" aria-label="Links institucionais">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Acessibilidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
